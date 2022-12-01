@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Wong Tai Sin | Gallery</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An interactive page to view different parts of Wong Tai Sin.">
+        <link rel="stylesheet" href="project.css">
+        <script src="jquery-3.6.1.min.js"></script>
+        <link rel="stylesheet" href="fotorama-4.6.4/fotorama.css">
+        <script src="fotorama-4.6.4/fotorama.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>WONG TAI SIN:
+                    <br>
+                    An old district</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="facts.html">Facts</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li id="dropdowntrigger"><a href="facilities/facilities.html">Public facilities</a>
+                        <ul id="dropdown">
+                            <li><a href="facilities/recreation.html">Recreation and culture</a></li>
+                            <li><a href="facilities/education.html">Education</a></li>
+                            <li><a href="facilities/healthcare.html">Healthcare</a></li>
+                            <li><a href="facilities/railway.html">Railway</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </nav>
+            <div class="fotorama" data-autoplay="true" data-width="100%" data-height="250" data-fit="cover" data-loop="true" data-shuffle="true" data-transition="crossfade" data-autoplay="5000">
+                <img src="mainimages/hero.jpg" data-caption="Photo credit: Eddie Yip" alt="View of Kowloon from a mountain in Wong Tai Sin">
+                <img src="mainimages/hero2.jpg" data-caption="Photo credit: Wikimedia Commons, Studio Incendo" alt="Democratic protest on Lion Rock">
+                <img src="mainimages/hero3.jpg" data-caption="Photo credit: Wikimedia Commons, Musg" alt="A view of urban Wong Tai Sin with Lion Rock">
+                <img src="mainimages/hero4.jpg" data-caption="Photo credit: Wikimedia Commons, Exploringlife" alt="Lower Wong Tai Sin (II) Estate">
+                <img src="mainimages/hero5.jpg" data-caption="Photo credit: Raymond Ling" alt="View of Hong Kong from Kowloon Peak">
+                <img src="mainimages/hero6.jpg" data-caption="Photo credit: Wikimedia Commons, Pasu Au Yeung" alt="A democratic protest banner on Lion Rock">
+            </div>
+            <div id="hero">
+                <span id="herocredit">Photo credit: Eddie Yip</span>
+            </div>
+            <main id="gallerymain">
+                <div id="gallery">
+                    <span id="breadcrumb"><a href="index.html">Home</a> > <a href="gallery.html">Gallery</a></span>
+                    <h2>Gallery of Wong Tai Sin images</h2>
+                    <p>Have a look at different views of Wong Tai Sin!</p>
+                    <figure>
+                        <img src="galleryimages/photo1.jpg" width="320" height="240" alt="">
+                    </figure>
+                    <ul>
+                        <li>
+                            <img src="galleryimages/photo1small.jpg" width="180" height="135" alt="">
+                            <span>
+                                <img src="galleryimages/photo1.jpg" width="320" height="240" alt="">
+                                <br>
+                                Photo credit: Wikimedia Commons, WiNG
+                            </span>
+                        </li>
+                        <li>
+                            <img src="galleryimages/photo2small.jpg" width="180" height="135" alt="">
+                            <span>
+                                <img src="galleryimages/photo2.jpg" width="320" height="240" alt="">
+                                <br>
+                                Photo credit: Wikimedia Commons, Dua Grecviem
+                            </span>
+                        </li>
+                        <li>
+                            <img src="galleryimages/photo3small.jpg" width="180" height="135" alt="">
+                            <span>
+                                <img src="galleryimages/photo3.jpg" width="320" height="240" alt="">
+                                <br>
+                                Photo credit: Wikimedia Commons, FAILWIA 2091O
+                            </span>
+                        </li>
+                        <li>
+                            <img src="galleryimages/photo4small.jpg" width="180" height="135" alt="">
+                            <span>
+                                <img src="galleryimages/photo4.jpg" width="320" height="240" alt="">
+                                <br>
+                                Photo credit: Wikimedia Commons, Dua Grecviem
+                            </span>
+                        </li>
+                        <li>
+                            <img src="galleryimages/photo5small.jpg" width="180" height="135" alt="">
+                            <span>
+                                <img src="galleryimages/photo5.jpg" width="320" height="240" alt="">
+                                <br>
+                                Photo credit: Wikimedia Commons, Lawrenze11
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="backtotop">
+                    <a href="#wrapper">Back to top</a>
+                </div>
+            </main>
+            <footer>
+                This is the website created by Stanley Chan as the project of the course CPSC1030-M02 at Langara College (Fall 2022).
+            </footer>
+        </div>
+    </body>
+</html>

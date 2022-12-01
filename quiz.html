@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Wong Tai Sin | Quiz</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A simple quiz to test your knowledge about Wong Tai Sin!">
+        <link rel="stylesheet" href="project.css">
+        <script src="project.js" defer></script>
+        <script src="jquery-3.6.1.min.js"></script>
+        <link rel="stylesheet" href="fotorama-4.6.4/fotorama.css">
+        <script src="fotorama-4.6.4/fotorama.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+        <header>
+            <h1>WONG TAI SIN:
+                <br>
+                An old district</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="facts.html">Facts</a></li>
+                <li><a href="history.html">History</a></li>
+                <li id="dropdowntrigger"><a href="facilities/facilities.html">Public facilities</a>
+                    <ul id="dropdown">
+                        <li><a href="facilities/recreation.html">Recreation and culture</a></li>
+                        <li><a href="facilities/education.html">Education</a></li>
+                        <li><a href="facilities/healthcare.html">Healthcare</a></li>
+                        <li><a href="facilities/railway.html">Railway</a></li>
+                    </ul>
+                </li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+        </nav>
+        <div id="fotoramacontainer">
+            <div class="fotorama" data-autoplay="5000" data-width="100%" data-height="250" data-fit="cover" data-loop="true" data-shuffle="true" data-transition="crossfade">
+                <img src="mainimages/hero.jpg" data-caption="Photo credit: Eddie Yip" alt="View of Kowloon from a mountain in Wong Tai Sin">
+                <img src="mainimages/hero2.jpg" data-caption="Photo credit: Wikimedia Commons, Studio Incendo" alt="Democratic protest on Lion Rock">
+                <img src="mainimages/hero3.jpg" data-caption="Photo credit: Wikimedia Commons, Musg" alt="A view of urban Wong Tai Sin with Lion Rock">
+                <img src="mainimages/hero4.jpg" data-caption="Photo credit: Wikimedia Commons, Exploringlife" alt="Lower Wong Tai Sin (II) Estate">
+                <img src="mainimages/hero5.jpg" data-caption="Photo credit: Raymond Ling" alt="View of Hong Kong from Kowloon Peak">
+                <img src="mainimages/hero6.jpg" data-caption="Photo credit: Wikimedia Commons, Pasu Au Yeung" alt="A democratic protest banner on Lion Rock">
+            </div>
+        </div>
+        <div id="hero">
+            <span id="herocredit">Photo credit: Eddie Yip</span>
+        </div>
+            <main id="homemain">
+                <div id="left1">
+                    <span id="breadcrumb"><a href="index.html">Home</a> > <a href="quiz.html">Quiz</a></span>
+                    <h2>Quiz on Wong Tai Sin</h2>
+                    <p>Take a quick look at how well you understand about Wong Tai Sin!</p>
+                    <p>If you have JavaScript enabled, you will be able to see your score right below the submit button!</p>
+                    <noscript>It seems that you have no JavaScript enabled nor installed ... No worries! You can still see your quiz result after in our email to you!</noscript>
+                </div>
+                <div id="right1">
+                    <img src="quizimages/quiz.jpg" sizes="100vw" srcset="quizimages/quiz.jpg 1024w, quizimages/quizsmall.jpg 600w" alt="">
+                    <span class="credit">Image credit: Mohamed Hassan</span>
+                </div>
+                <div id="left2">
+                    <form name="quiz" id="quiz" method="post" action="https://webdevbasics.net/scripts/demo.php" target="_blank">
+                        <fieldset>
+                            <legend>Question 1</legend>
+                            <p class="question">Which of the following feature is correct for Wong Tai Sin?</p>
+                            <div class="answer"><input type="radio" name="q1" id="q1a" value="q1a"><label for="q1a">A. Most densely populated in Hong Kong</label></div>
+                            <div class="answer"><input type="radio" name="q1" id="q1b" value="q1b"><label for="q1b">B. Highest education level in Hong Kong</label></div>
+                            <div class="answer"><input type="radio" name="q1" id="q1c" value="q1c"><label for="q1c">C. Oldest population in Hong Kong</label></div>
+                            <div class="answer"><input type="radio" name="q1" id="q1d" value="q1d"><label for="q1d">D. Upper-middle level of household income in Hong Kong</label></div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Question 2</legend>
+                            <p class="question">Which of the following region is Wong Tai Sin located in?</p>
+                            <div class="answer"><input type="radio" name="q2" id="q2a" value="q2a"><label for="q2a">A. Hong Kong Island</label></div>
+                            <div class="answer"><input type="radio" name="q2" id="q2b" value="q2b"><label for="q2b">B. Kowloon Peninsula</label></div>
+                            <div class="answer"><input type="radio" name="q2" id="q2c" value="q2c"><label for="q2c">C. The New Territories</label></div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Question 3</legend>
+                            <p class="question">Which of the following areas is / are part of Wong Tai Sin?</p>
+                            <div class="answer"><input type="checkbox" name="q3a" id="q3a" value="q3a"><label for="q3a">A. Wang Tau Hom</label></div>
+                            <div class="answer"><input type="checkbox" name="q3b" id="q3b" value="q3b"><label for="q3b">B. Kowloon Tong</label></div>
+                            <div class="answer"><input type="checkbox" name="q3c" id="q3c" value="q3c"><label for="q3c">C. Ngau Chi Wan</label></div>
+                            <div class="answer"><input type="checkbox" name="q3d" id="q3d" value="q3d"><label for="q3d">D. Chuk Yuen</label></div>
+                            <div class="answer"><input type="checkbox" name="q3e" id="q3e" value="q3e"><label for="q3e">E. Lam Tin</label></div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Question 4</legend>
+                            <p class="question">Which railway station(s) is / are very close to Morse Park?</p>
+                            <div class="answer"><input type="checkbox" name="q4a" id="q4a" value="q4a"><label for="q4a">A. Lok Fu</label></div>
+                            <div class="answer"><input type="checkbox" name="q4b" id="q4b" value="q4b"><label for="q4b">B. Wong Tai Sin</label></div>
+                            <div class="answer"><input type="checkbox" name="q4c" id="q4c" value="q4c"><label for="q4c">C. Diamond Hill</label></div>
+                            <div class="answer"><input type="checkbox" name="q4d" id="q4d" value="q4d"><label for="q4d">D. Choi Hung</label></div>
+                            <div class="answer"><input type="checkbox" name="q4e" id="q4e" value="q4e"><label for="q4e">E. Kowloon Bay</label></div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Question 5</legend>
+                            <p class="question">What was the theme of a rare, illegal political public assembly held in Morse Park in the 1970s?</p>
+                            <div class="answer"><input type="radio" name="q5" id="q5a" value="q5a"><label for="q5a">A. Democratization of Hong Kong</label></div>
+                            <div class="answer"><input type="radio" name="q5" id="q5b" value="q5b"><label for="q5b">B. Independence of Hong Kong</label></div>
+                            <div class="answer"><input type="radio" name="q5" id="q5c" value="q5c"><label for="q5c">C. Anti-police brutality in Hong Kong</label></div>
+                            <div class="answer"><input type="radio" name="q5" id="q5d" value="q5d"><label for="q5d">D. Anti-corruption in Hong Kong</label></div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Question 6</legend>
+                            <p class="question">What was the event that led to the influx of refugees to Hong Kong and the population boom in districts including Wong Tai Sin?</p>
+                            <div class="answer"><input type="radio" name="q6" id="q6a" value="q6a"><label for="q6a">A. First World War</label></div>
+                            <div class="answer"><input type="radio" name="q6" id="q6b" value="q6b"><label for="q6b">B. Second World War</label></div>
+                            <div class="answer"><input type="radio" name="q6" id="q6c" value="q6c"><label for="q6c">C. Chinese Civil War</label></div>
+                            <div class="answer"><input type="radio" name="q6" id="q6d" value="q6d"><label for="q6d">D. Vietnam War</label></div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Question 7</legend>
+                            <p class="question">What is the year with riots in Hong Kong sparked by a labour exploitation incident in a factory in Wong Tai Sin? (Enter a four-digit year.)</p>
+                            <div class="openanswer"><input type="text" name="q7" id="q7" maxlength="4" autocomplete="off"><label for="q7"></label></div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Question 8</legend>
+                            <p class="question">Following the last question, where was the factory located?</p>
+                            <div class="answer"><input type="radio" name="q8" id="q8a" value="q8a"><label for="q8a">A. Tsz Wan Shan</label></div>
+                            <div class="answer"><input type="radio" name="q8" id="q8b" value="q8b"><label for="q8b">B. Wang Tau Hom</label></div>
+                            <div class="answer"><input type="radio" name="q8" id="q8c" value="q8c"><label for="q8c">C. San Po Kong</label></div>
+                            <div class="answer"><input type="radio" name="q8" id="q8d" value="q8d"><label for="q8d">D. Hammer Hill</label></div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Question 9</legend>
+                            <p class="question">Which of the following is the organization administering Wong Tai Sin Temple?</p>
+                            <div class="answer"><input type="radio" name="q9" id="q9a" value="q9a"><label for="q9a">A. Sik Sik Yuen</label></div>
+                            <div class="answer"><input type="radio" name="q9" id="q9b" value="q9b"><label for="q9b">B. Hong Kong Red Cross</label></div>
+                            <div class="answer"><input type="radio" name="q9" id="q9c" value="q9c"><label for="q9c">C. Hong Kong Buddhist Association</label></div>
+                            <div class="answer"><input type="radio" name="q9" id="q9d" value="q9d"><label for="q9d">D. Leisure and Cultural Services Department</label></div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Question 10</legend>
+                            <p class="question">What is the name of the TV drama about the typical life of grassroots Hongkongers in the 1970s?</p>
+                            <div class="answer"><input type="radio" name="q10" id="q10a" value="q10a"><label for="q10a">A. Above the Lion Rock</label></div>
+                            <div class="answer"><input type="radio" name="q10" id="q10b" value="q10b"><label for="q10b">B. Below the Lion Rock</label></div>
+                            <div class="answer"><input type="radio" name="q10" id="q10c" value="q10c"><label for="q10c">C. Next to the Lion Rock</label></div>
+                            <div class="answer"><input type="radio" name="q10" id="q10d" value="q10d"><label for="q10d">D. Inside the Lion Rock</label></div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Submit your answer!</legend>
+                            <p class="question">Please provide your email address so that you can receive the result of the quiz.</p>
+                            <div id="emailinput"><input type="email" name="email" id="email" placeholder="Email address" size="30" autocomplete="off" required><label for="email"></label></div>
+                            <div id="newsletteroption"><input type="checkbox" name="newsletter" id="newsletter" value="newsletter"><label for="newsletter">Please tick this box if you want to receive newsletters about this website in future.</label></div>
+                            <div id="quizbuttons">
+                                <input type="submit" name="quizsubmit" id="quizsubmit">
+                                <input type="reset" name="quizreset" id="quizreset">
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div id="privacypolicy">
+                        <h3>About your information</h3>
+                        <p>Unless you have opted for receiving newsletters from us in the quiz form, your email address is collected solely for providing you the result of the quiz only. In this case, your email address will only be stored at out web server for not more than one calendar year before we destory such information.</p>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                This is the website created by Stanley Chan as the project of the course CPSC1030-M02 at Langara College (Fall 2022).
+            </footer>
+        </div>
+    </body>
+</html>

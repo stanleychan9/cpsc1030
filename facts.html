@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Wong Tai Sin | Facts</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Key statistical data about the socio-economic profile of residents of Wong Tai Sin, compared with other districts in Hong Kong.">
+        <link rel="stylesheet" href="project.css">
+        <script src="jquery-3.6.1.min.js"></script>
+        <link rel="stylesheet" href="fotorama-4.6.4/fotorama.css">
+        <script src="fotorama-4.6.4/fotorama.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>WONG TAI SIN:
+                    <br>
+                    An old district</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="facts.html">Facts</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li id="dropdowntrigger"><a href="facilities/facilities.html">Public facilities</a>
+                        <ul id="dropdown">
+                            <li><a href="facilities/recreation.html">Recreation and culture</a></li>
+                            <li><a href="facilities/education.html">Education</a></li>
+                            <li><a href="facilities/healthcare.html">Healthcare</a></li>
+                            <li><a href="facilities/railway.html">Railway</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </nav>
+            <div id="fotoramacontainer">
+                <div class="fotorama" data-autoplay="5000" data-width="100%" data-height="250" data-fit="cover" data-loop="true" data-shuffle="true" data-transition="crossfade">
+                    <img src="mainimages/hero.jpg" data-caption="Photo credit: Eddie Yip" alt="View of Kowloon from a mountain in Wong Tai Sin">
+                    <img src="mainimages/hero2.jpg" data-caption="Photo credit: Wikimedia Commons, Studio Incendo" alt="Democratic protest on Lion Rock">
+                    <img src="mainimages/hero3.jpg" data-caption="Photo credit: Wikimedia Commons, Musg" alt="A view of urban Wong Tai Sin with Lion Rock">
+                    <img src="mainimages/hero4.jpg" data-caption="Photo credit: Wikimedia Commons, Exploringlife" alt="Lower Wong Tai Sin (II) Estate">
+                    <img src="mainimages/hero5.jpg" data-caption="Photo credit: Raymond Ling" alt="View of Hong Kong from Kowloon Peak">
+                    <img src="mainimages/hero6.jpg" data-caption="Photo credit: Wikimedia Commons, Pasu Au Yeung" alt="A democratic protest banner on Lion Rock">
+                </div>
+            </div>
+            <div id="hero">
+                <span id="herocredit">Photo credit: Eddie Yip</span>
+            </div>
+            <main>
+                <div id="singlecollayout">
+                    <span id="breadcrumb"><a href="index.html">Home</a> > <a href="facts.html">Facts</a></span>
+                    <h2>Facts about Wong Tai Sin</h2>
+                    <p>Below is some of the major statistics about Wong Tai Sin (WTS) based on <a href="https://www.census2021.gov.hk/en" target="_blank">2021 Population Census</a><img src="mainimages/externallink.png" width="16" height="16" alt="external link" class="extlink">, conducted by the <a href="https://www.censtatd.gov.hk/en" target="_blank">Census and Statistics Department</a><img src="mainimages/externallink.png" width="16" height="16" alt="external link" class="extlink"> of the Hong Kong government.</p>
+                    <!-- Source of the external link icon: https://iconscout.com/icon/external-1767969 -->
+                    <!-- Major observations from statistics moved above the table based on a friend's suggestion: From general to specific -->
+                    <p>The statistics below can demonstrate the following characteristics of Wong Tai Sin:</p>
+                    <ul>
+                        <li>High population density</li>
+                        <li>Old population</li>
+                        <li>Low socio-economic status</li>
+                    </ul>
+                    <table id="factstable">
+                        <tr>
+                            <th id="subject">Subject</th>
+                            <th id="statwts">Statistics<br>(WTS)</th>
+                            <th id="stathk">Statistics<br>(HK)</th>
+                            <th id="rank">Rank*</th>
+                        </tr>
+                        <tr>
+                            <td headers="subject">Population</td>
+                            <td headers="statwts">406,802</td>
+                            <td headers="stathk">7,413,010</td>
+                            <td headers="rank">10</td>
+                        </tr>
+                        <tr>
+                            <td headers="subject">Population density (persons/km2)</td>
+                            <td headers="statwts">43,730</td>
+                            <td headers="stathk">6,801</td>
+                            <td headers="rank">4</td>
+                        </tr>
+                        <tr>
+                            <td headers="subject">Median age</td>
+                            <td headers="statwts">50.1</td>
+                            <td headers="stathk">46.3</td>
+                            <td headers="rank">1</td>
+                        </tr>
+                        <tr>
+                            <td headers="subject">Proportion the aged 15 or over with post-secondary education (%)</td>
+                            <td headers="statwts">27.0</td>
+                            <td headers="stathk">34.6</td>
+                            <td headers="rank">17</td>
+                        </tr>
+                        <tr>
+                            <td headers="subject">Median monthly income from employment (HKD)</td>
+                            <td headers="statwts">17,000</td>
+                            <td headers="stathk">19,500</td>
+                            <td headers="rank">14</td>
+                        </tr>
+                        <tr>
+                            <td headers="subject">Median monthly economically active household income (HKD)</td>
+                            <td headers="statwts">30,140</td>
+                            <td headers="stathk">35,040</td>
+                            <td headers="rank">16</td>
+                        </tr>
+                        <tr>
+                            <td headers="subject">Labour force participation rate (%)</td>
+                            <td headers="statwts">56.4</td>
+                            <td headers="stathk">59.7</td>
+                            <td headers="rank">17</td>
+                        </tr>
+                    </table>
+                    <span class="notes">*It refers to the rank of Wong Tai Sin out of all 18 districts in Hong Kong.</span>
+                </div>
+                <div class="backtotop">
+                    <a href="#wrapper">Back to top</a>
+                </div>
+            </main>
+            <footer>
+                This is the website created by Stanley Chan as the project of the course CPSC1030-M02 at Langara College (Fall 2022).
+            </footer>
+        </div>
+    </body>
+</html>
